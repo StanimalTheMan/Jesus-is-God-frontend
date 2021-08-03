@@ -70,7 +70,7 @@ const claims = [
     ],
   },
   {
-    claim: "Forgive Sins",
+    claim: "FORGIVE SINS",
     id: 4,
     verseList: [
       {
