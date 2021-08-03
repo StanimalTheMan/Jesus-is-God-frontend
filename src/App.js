@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ClaimList from './components/ClaimList'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const claims = [
+  {claim: 'Omnipresent', id: 1},
+  {claim: 'Omniscient', id: 2},
+  {claim: 'Omnipotent', id: 3},
+  {claim: 'Forgive Sins', id: 4},
+  {claim: 'Accepts Worship', id: 5},
+  {claim: 'Other God Claims', id: 6}
+]
+
+const App = (props) => {
+   return <ClaimList claims={claims} />
 }
 
 export default App;
